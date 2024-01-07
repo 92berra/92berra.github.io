@@ -24,8 +24,24 @@
   color: white;
 }
 
+.App-header-title {
+  font-family: 'Diphylleia', serif;
+  font-size: 40px;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.App-navbar {
+  font-family: 'Diphylleia', serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.App-navbar-item {
+  margin: 0 20px;
 }
 
 @keyframes App-logo-spin {
