@@ -1,11 +1,21 @@
 .Component-title {
     margin-top: 50px;
+    margin-left: 30px;
     font-family: 'Noto Serif KR', serif;
     font-size: 30px;
+    text-align: left;
 }
 
 .Component-sub-title {
-    font-family: 'Noto Serif KR', serif;
     margin-top: 10px;
+    margin-left: 30px;
+    font-family: 'Noto Serif KR', serif;
     font-size: 16.3px;
+    text-align: left;
+}
+
+.Component-body {
+    margin-top: 10px;
+    margin-left: 30px;
+    text-align: left;
 }

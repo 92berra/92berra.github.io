@@ -13,13 +13,10 @@ function Thesis() {
       </div>
 
       <div className='Component-body'>
-        
+
       </div>
 
     </div>
-    
-
-    
   );
 }
 
