@@ -1,42 +1,51 @@
-import React, { useState } from 'react';
-import { useTrail, a } from '@react-spring/web';
+import React, { useState, useCallback, useRef, useEffect } from 'react'
+import { useTransition, animated } from '@react-spring/web'
 
-import styles from './styles.module.css';
-
-type TrailProps = {
-  open: boolean;
-  children: React.ReactNode; // Adding children to the props definition
-};
-
-const Trail: React.FC<TrailProps> = ({ open, children }) => {
-  const items = React.Children.toArray(children);
-  const trail = useTrail(items.length, {
-    config: { mass: 5, tension: 2000, friction: 200 },
-    opacity: open ? 1 : 0,
-    x: open ? 0 : 20,
-    height: open ? 110 : 0,
-    from: { opacity: 0, x: 20, height: 0 },
-  });
-
-  return (
-    <div>
-      {trail.map(({ height, ...style }, index) => (
-        <a.div key={index} className={styles.trailsText} style={style}>
-          <a.div style={{ height }}>{items[index]}</a.div>
-        </a.div>
-      ))}
-    </div>
-  );
-};
+import styles from './styles.module.css'
 
 export default function App() {
-  const [open, set] = useState(true);
+  const ref = useRef<ReturnType<typeof setTimeout>[]>([])
+  const [items, set] = useState<string[]>([])
+  const transitions = useTransition(items, {
+    from: {
+      opacity: 0,
+      height: 0,
+      innerHeight: 0,
+      transform: 'perspective(600px) rotateX(0deg)',
+      color: '#D5D5D5',
+    },
+    enter: [
+      { opacity: 1, height: 80, innerHeight: 80 },
+      { transform: 'perspective(600px) rotateX(180deg)', color: '#D5D5D5' },
+      { transform: 'perspective(600px) rotateX(0deg)' },
+    ],
+    leave: [{ color: '#D5D5D5' }, { innerHeight: 0 }, { opacity: 0, height: 0 }],
+    update: { color: '#000000' },
+  })
+
+  const reset = useCallback(() => {
+    ref.current.forEach(clearTimeout)
+    ref.current = []
+    set([])
+    ref.current.push(setTimeout(() => set(['Hello, This is', 'Berra.', 'I am a','Software Developer.']), 2000))
+    ref.current.push(setTimeout(() => set(['Berra.','Software Developer.']), 5000))
+    ref.current.push(setTimeout(() => set(['Hello, This is', 'Berra.', 'I am a','Software Developer.']), 8000))
+  }, [])
+
+  useEffect(() => {
+    reset()
+    return () => ref.current.forEach(clearTimeout)
+  }, [])
+
   return (
-    <div className={styles.container} onClick={() => set(state => !state)}>
-      <Trail open={open}>
-        <span>Hello,</span>
-        <span>I'm Berra.</span>
-      </Trail>
+    <div className={styles.container}>
+      <div className={styles.main}>
+        {transitions(({ innerHeight, ...rest }, item) => (
+          <animated.div className={styles.transitionsItem} style={rest} onClick={reset}>
+            <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+          </animated.div>
+        ))}
+      </div>
     </div>
-  );
+  )
 }
