@@ -18,8 +18,15 @@
   will-change: transform, opacity, height;
   white-space: nowrap;
   cursor: pointer;
-  line-height: 45px;
-  font-family: Amaranth;
+  line-height: 100px;
+  font-family: Handlee;
+}
+
+.outerContainer {
+  margin-top: 40px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -27,11 +34,29 @@
   align-items: center;
   height: 100%;
   justify-content: center;
-  
 }
 
+.navBar {
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  gap: 20px; /* Add space between the links */
+  font-family: 'Noto Sans', sans-serif; /* Set the font family */
+}
+
+.navLink {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set the link color */
+  font-size: 16px; /* Adjust font size as needed */
+}
 .amaranth-regular {
   font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.handlee-regular {
+  font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
 }

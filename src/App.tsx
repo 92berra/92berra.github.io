@@ -1,7 +1,10 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react'
 import { useTransition, animated } from '@react-spring/web'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import styles from './styles.module.css'
+import { NavBar } from './NavBar'
+import LeftAlignedTimeline from './components/LeftAlignedTimeline'
 
 export default function App() {
   const ref = useRef<ReturnType<typeof setTimeout>[]>([])
@@ -38,14 +41,27 @@ export default function App() {
   }, [])
 
   return (
-    <div className={styles.container}>
-      <div className={styles.main}>
-        {transitions(({ innerHeight, ...rest }, item) => (
-          <animated.div className={styles.transitionsItem} style={rest} onClick={reset}>
-            <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
-          </animated.div>
-        ))}
+    <div className={styles.outerContainer}>
+      <div className={styles.container}>
+        <div className={styles.main}>
+          {transitions(({ innerHeight, ...rest }, item) => (
+            <animated.div className={styles.transitionsItem} style={rest} onClick={reset}>
+              <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+            </animated.div>
+          ))}
+        </div>
       </div>
+
+      <br/>
+
+      <div className={styles.navBarContainer}>
+        <NavBar />
+      </div>
+
+      <Routes>
+          <Route path="/" element={<div>Main Page</div>} />
+          <Route path="/about" element={<LeftAlignedTimeline />} />
+      </Routes>
     </div>
   )
 }
