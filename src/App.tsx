@@ -1,10 +1,8 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react'
 import { useTransition, animated } from '@react-spring/web'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 import styles from './styles.module.css'
 import { NavBar } from './NavBar'
-import LeftAlignedTimeline from './components/LeftAlignedTimeline'
+// import LeftAlignedTimeline from './components/LeftAlignedTimeline'
 
 export default function App() {
   const ref = useRef<ReturnType<typeof setTimeout>[]>([])
@@ -58,10 +56,6 @@ export default function App() {
         <NavBar />
       </div>
 
-      <Routes>
-          <Route path="/" element={<div>Main Page</div>} />
-          <Route path="/about" element={<LeftAlignedTimeline />} />
-      </Routes>
     </div>
   )
 }

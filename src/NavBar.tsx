@@ -1,14 +1,22 @@
-
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import LeftAlignedTimeline from "./components/LeftAlignedTimeline";
 import styles from './styles.module.css'; // Make sure to create this CSS module
 
 export function NavBar() {
+    const [showTimeline, setShowTimeline] = useState(false);
+
+    const handleAboutClick = () => {
+        setShowTimeline(!showTimeline);
+    }
     return (
-        <div className={styles.navBar}>
-            <NavLink to="/" className={styles.navLink}>HOME</NavLink>
-            <NavLink to="/about" className={styles.navLink}>ABOUT ME</NavLink>
-            <NavLink to="/contact" className={styles.navLink}>CONTACT</NavLink>
+        <div>
+            <div className={styles.navBar}>
+                <div className={styles.navItem}>HOME</div>
+                <div className={styles.navItem} onClick={handleAboutClick}>ABOUT ME</div>
+                <div className={styles.navItem}>CONTACT</div>
+            </div>
+            {showTimeline && <LeftAlignedTimeline />}
         </div>
     );
 }
