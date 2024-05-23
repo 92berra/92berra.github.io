@@ -1,6 +1,7 @@
 html,
 body,
-#root {
+
+#intro {
   height: 100%;
   width: 100%;
 }
@@ -8,6 +9,11 @@ body,
 body {
   font-family: system-ui;
   margin: 0;
+  background-color: #FFD9EC;;
+}
+
+#content {
+  background-color: white;
 }
 
 *,

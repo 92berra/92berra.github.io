@@ -64,7 +64,7 @@ export default function LeftAlignedTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <b>Advertising Agency Customer Center Counselor</b> <br/>
-          <i>Part-time Job</i> <br/>
+          <i>Part-time Job</i> <br/><br/>
         </TimelineContent>
       </TimelineItem>
 

@@ -1,14 +1,24 @@
 .main {
   min-width: 100px;
-  padding: 0 20px;
-  margin: 0 auto;
-  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: #FFD9EC;
 }
 
 .transitionsItem {
   overflow: hidden;
   width: 100%;
-  color: white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -23,7 +33,6 @@
 }
 
 .outerContainer {
-  margin-top: 40px;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -36,27 +45,6 @@
   justify-content: center;
 }
 
-.navBarContainer {
-  margin-top: 100px;
-  text-align: left;
-}
-
-.navBar {
-  display: flex;
-  justify-content: space-between; /* Adjust the spacing as needed */
-  align-items: center;
-  text-align: left;
-}
-
-.navItem {
-  margin-right: 30px; /* Adjust the spacing as needed */
-}
-
-.navContainer {
-  display: flex;
-  align-items: center;
-}
-
 .amaranth-regular {
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
@@ -67,4 +55,37 @@
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.content {
+  background-color: white;
+}
+
+.aboutMeHeader {
+  text-align: center;
+}
+
+.aboutMe {
+  background-color: white;
+}
+
+.contact {
+  background-color: #99004C;
+  text-align: center;
+  color: white;
+}
+
+.contactHeader {
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  height: 80px;
+  font-size: large;
+  background-color: #FFD9EC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

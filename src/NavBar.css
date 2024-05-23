@@ -1,0 +1,21 @@
+.navBarContainer {
+    visibility: visible;
+    text-align: left;
+    background-color: #F361A6;
+    display: flex;
+    justify-content: left;
+    height: 40px;
+}
+  
+.navBar {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 120px;
+}
+  
+.navItem {
+    margin-right: 100px;
+    color: white;
+    font-size: large;
+}
