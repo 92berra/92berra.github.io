@@ -83,7 +83,6 @@
 .footer {
   text-align: center;
   height: 80px;
-  font-size: large;
   background-color: #FFD9EC;
   display: flex;
   flex-direction: column;

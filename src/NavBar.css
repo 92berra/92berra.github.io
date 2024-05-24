@@ -5,6 +5,15 @@
     display: flex;
     justify-content: left;
     height: 40px;
+    transition: top 0.3s;
+}
+
+.navBarContainer.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* 필요에 따라 조정 */
 }
   
 .navBar {

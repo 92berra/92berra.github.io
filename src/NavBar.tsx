@@ -14,27 +14,31 @@ export function NavBar() {
     })
 
     const handleScroll = () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 800) {
             setIsVisible(true);
         } else {
             setIsVisible(false);
         }
     }
 
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div>
-            <div className="navBarContainer" style={
-                isVisible === true ? {visibility: 'visible'}
-                : {visibility: 'hidden'}
-            }>
+            <div className={`navBarContainer ${isVisible ? 'fixed' : ''}`}>
                 <div className="navBar">
-                    <div className="navItem">
+                    <div className="navItem" onClick={() => scrollToSection('head')}>
                         HOME
                     </div>
-                    <div className="navItem">
+                    <div className="navItem" onClick={() => scrollToSection('aboutMeContent')}>
                         ABOUT ME
                     </div>
-                    <div className="navItem">
+                    <div className="navItem" onClick={() => scrollToSection('contact')}>
                         CONTACT
                     </div>
                 </div>

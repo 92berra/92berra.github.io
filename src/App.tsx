@@ -40,7 +40,7 @@ export default function App() {
   }, [])
   return (
     <div>
-      <div className="App">
+      <div id="head" className="App">
       <div className='App-header'>
         <div className={styles.outerContainer}>
           <div className={styles.container}>
@@ -57,24 +57,29 @@ export default function App() {
     
       <br/>
 
-      <div className={styles.navBarContainer}>
+      <div id="navBarContainer" className={styles.navBarContainer}>
         <NavBar />
       </div>
 
       <div className={styles.content}>
         <br/>
-        <div className={styles.aboutMe}>
-          <h1 className={styles.aboutMeHeader}>
-            All My Experiences
-          </h1>
-          <div className="timeline">
-              <LeftAlignedTimeline />
+
+        {/* About Me*/}
+        <div id="aboutMeContent">
+          <div className={styles.aboutMe}>
+            <h1 className={styles.aboutMeHeader}>
+              All My Experiences
+            </h1>
+          <div>
+            <LeftAlignedTimeline />
           </div>
         </div>
 
+        </div>
+        
         <br/>
 
-        <div className={styles.contact}>
+        <div id="contact" className={styles.contact}>
           <br/>
 
           <h1 className={styles.contactHeader}>
