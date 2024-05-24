@@ -11,6 +11,11 @@
 <img src='assets/aboutme.png'>
 
 <br/>
+
+## Contact
+This function is not completed. Just in progress. ⚒️
+
+<br/>
 <br/>
 <br/>
 <br/>
