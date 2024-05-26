@@ -9,11 +9,6 @@ body,
 body {
   font-family: system-ui;
   margin: 0;
-  background-color: #FFD9EC;;
-}
-
-#content {
-  background-color: white;
 }
 
 *,

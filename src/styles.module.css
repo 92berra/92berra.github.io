@@ -13,7 +13,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background-color: #FFD9EC;
+  
+
 }
 
 .transitionsItem {
@@ -36,6 +37,7 @@
   display:flex;
   flex-direction: column;
   align-items: center;
+  background-color: #FFD9EC;
 }
 
 .container {
@@ -57,34 +59,22 @@
   font-style: normal;
 }
 
-.content {
-  background-color: white;
-}
-
-.aboutMeHeader {
+.contentHeader {
   text-align: center;
 }
 
-.aboutMe {
-  background-color: white;
+.topButtonArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact {
-  background-color: #99004C;
-  text-align: center;
-  color: white;
-}
-
-.contactHeader {
-  color: white;
-  text-align: center;
-}
 
 .footer {
   text-align: center;
   height: 80px;
-  background-color: #FFD9EC;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
 }

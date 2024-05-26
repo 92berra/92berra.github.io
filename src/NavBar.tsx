@@ -35,7 +35,7 @@ export function NavBar() {
                     <div className="navItem" onClick={() => scrollToSection('head')}>
                         HOME
                     </div>
-                    <div className="navItem" onClick={() => scrollToSection('aboutMeContent')}>
+                    <div className="navItem" onClick={() => scrollToSection('aboutme')}>
                         ABOUT ME
                     </div>
                     <div className="navItem" onClick={() => scrollToSection('contact')}>
