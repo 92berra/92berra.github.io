@@ -82,6 +82,7 @@ export default function App() {
 
       <div id="contact" className={styles.contact}>
         <h1 className={styles.contentHeader}>CONTACT</h1>
+        <ContactForm />
         <div className={styles.contentHeader}>
           ⚒️ This function is not completed, just in progress... ⚒️
         </div>
