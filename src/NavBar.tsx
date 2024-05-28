@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
-import LeftAlignedTimeline from "./components/LeftAlignedTimeline";
-import './NavBar.css'; // Make sure to create this CSS module
+import './NavBar.css';
 
 export function NavBar() {
     const [isVisible, setIsVisible] = useState(false);
@@ -22,9 +20,15 @@ export function NavBar() {
     }
 
     const scrollToSection = (id: string) => {
+        
         const element = document.getElementById(id);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            const offset = 70;
+            window.scrollTo({
+                top: elementPosition - offset,
+                behavior: 'smooth'
+            })
         }
     };
 

@@ -11,6 +11,7 @@ import TimelineOppositeContent, {
 
 export default function LeftAlignedTimeline() {
   return (
+    
     <Timeline
       sx={{
         [`& .${timelineOppositeContentClasses.root}`]: {
@@ -18,6 +19,8 @@ export default function LeftAlignedTimeline() {
         },
       }}
     >
+      
+      <h1 style={{textAlign: 'center'}}>All My Experiences</h1>
 
       <TimelineItem>
         <TimelineOppositeContent color="textSecondary">

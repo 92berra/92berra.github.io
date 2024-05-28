@@ -74,8 +74,9 @@ export default function App() {
 
       {/* About Me*/}
       <div id="aboutme">
-        <h1 className={styles.contentHeader}>All My Experiences</h1>
-        <LeftAlignedTimeline />
+        <div>
+          <LeftAlignedTimeline />
+        </div>
       </div>
 
       <br/>
