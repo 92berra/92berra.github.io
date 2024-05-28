@@ -19,7 +19,7 @@ export default function LeftAlignedTimeline() {
         },
       }}
     >
-      
+
       <h1 style={{textAlign: 'center'}}>All My Experiences</h1>
 
       <TimelineItem>

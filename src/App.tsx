@@ -72,11 +72,8 @@ export default function App() {
         <NavBar />
       </div>
 
-      {/* About Me*/}
       <div id="aboutme">
-        <div>
-          <LeftAlignedTimeline />
-        </div>
+        <LeftAlignedTimeline />
       </div>
 
       <br/>

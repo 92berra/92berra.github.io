@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import './NavBar.css';
-
 export function NavBar() {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -9,7 +8,7 @@ export function NavBar() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
-    })
+    }, []);
 
     const handleScroll = () => {
         if (window.scrollY > 800) {
@@ -20,15 +19,9 @@ export function NavBar() {
     }
 
     const scrollToSection = (id: string) => {
-        
         const element = document.getElementById(id);
         if (element) {
-            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-            const offset = 70;
-            window.scrollTo({
-                top: elementPosition - offset,
-                behavior: 'smooth'
-            })
+            element.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
