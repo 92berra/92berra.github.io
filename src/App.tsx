@@ -6,7 +6,18 @@ import topButton from './assets/top.png';
 
 export default function App() {
 
-  const scrollToSection = (id: string) => {
+  // 상태 추가
+  const [isActive, setIsActive] = useState(false);
+  // active 클래스 추가
+  const toggleActiveClass = () => {
+    setIsActive(!isActive);
+  };
+  // active 클래스를 제거하는 정리 함수
+  const removeActive = () => {
+    setIsActive(false)
+  }
+
+  const scrollToDiv = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       const yOffset = -80;
@@ -24,31 +35,36 @@ export default function App() {
 
   return (
     <div>
-      <section id='Intro' className='Intro'>
+      <div id='Intro' className='Intro'>
         <header className='App-header'>
           <h1>Hello, I'm <span style={{ color: '#D9418C' }}>Berra. </span><br />
             I'm a software developer.</h1>
         </header>
-      </section>
+      </div>
 
       <div className='NavBarEntire'>
         <div className='NavBarContainer'>
           <ul className='NavBar'>
-            <li className="NavBarItem" onClick={() => scrollToSection('Intro')}>HOME</li>
-            <li className="NavBarItem" onClick={() => scrollToSection('AboutMe')}>ABOUT ME</li>
-            <li className="NavBarItem" onClick={() => scrollToSection('Contact')}>CONTACT</li>
+            <li className="NavBarItem" onClick={() => scrollToDiv('Intro')}>HOME</li>
+            <li className="NavBarItem" onClick={() => scrollToDiv('AboutMe')}>ABOUT ME</li>
+            <li className="NavBarItem" onClick={() => scrollToDiv('Contact')}>CONTACT</li>
           </ul>
         </div>
         <span className='Divider' />
       </div>
 
-      <section id='AboutMe'>
+      <div id='AboutMe'>
+        <h1 className='ContentHeader'>All My Experiences</h1>
         <LeftAlignedTimeline />
-      </section>
+      </div>
 
-      <section id='Contact'>
+      <br />
+      <br />
+
+      <div id='Contact'>
+      <h1 className='ContentHeader'>Contact</h1>
         <ContactForm />
-      </section>
+      </div>
 
       <br />
 

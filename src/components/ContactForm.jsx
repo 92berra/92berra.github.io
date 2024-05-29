@@ -65,9 +65,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='ContactForm' style={{marginTop:"100px", marginBottom:"100px"}}>
-      <h1 style={{textAlign:"center"}}>CONTACT</h1>
-
+    <div className='ContactForm'>
       <br/>
       <br/>
       <div className='container'>
