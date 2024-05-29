@@ -66,9 +66,11 @@ const ContactForm = () => {
 
   return (
     <div className='ContactForm'>
-      <br/>
-      <br/>
-      <div className='container'>
+
+      <h1 className='ContentHeader'>Contact</h1>
+      <br />
+      <br />
+      <div className='container' >
         <div className='row'>
           <div className='col-12 text-center'>
             <div className='contactForm'>

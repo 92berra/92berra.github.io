@@ -1,0 +1,52 @@
+.NavBarEntire {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.NavBarEntire.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.NavBarContainer {
+  visibility: visible;
+  text-align: left;
+  background-color: #212121;
+  display: flex;
+  justify-content: left;
+  height: 40px;
+  transition: top 0.3s;
+  top: 0;
+  width: 100%;
+  color: white;
+}
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.NavBarItem {
+  margin-right: 20px;
+  color: white;
+  list-style: none;
+  cursor: pointer;
+}
+
+.NavBarItem.Active {
+  color: #f669e3;
+}
+
+.Divider {
+  background-color: #FFB2F5;
+  height: 5px;
+  display: block;
+}
