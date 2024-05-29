@@ -35,9 +35,9 @@ export function NavBar() {
                     <div className="navItem" onClick={() => scrollToSection('aboutme')}>
                         ABOUT ME
                     </div>
-                    <div className="navItem" onClick={() => scrollToSection('contact')}>
+                    {/* <div className="navItem" onClick={() => scrollToSection('contact')}>
                         CONTACT
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

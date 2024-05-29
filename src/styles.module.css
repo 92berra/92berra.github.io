@@ -1,39 +1,28 @@
 .main {
-  min-width: 100px;
-  display: flex;
+  min-height: 100vh;
   flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.transitionsItem {
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 3em;
-  text-transform: none;
-  will-change: transform, opacity, height;
-  white-space: nowrap;
-  cursor: pointer;
-  line-height: 40px;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: 260px;
   font-family: Amaranth;
+  font-size: large;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  background-color: #FFD9EC;
 }
 
 .outerContainer {
   display:flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FFD9EC;
 }
 
 .container {
@@ -64,7 +53,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .footer {
   text-align: center;
