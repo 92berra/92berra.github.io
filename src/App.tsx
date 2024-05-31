@@ -4,8 +4,11 @@ import NavBar from './components/NavBar';
 import LeftAlignedTimeline from './components/LeftAlignedTimeline';
 import ContactForm from './components/ContactForm';
 import topButton from './assets/top.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function App() {
+
 
   const scrollTop = () => {
     window.scroll({
