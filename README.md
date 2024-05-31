@@ -3,12 +3,12 @@
 <br/>
 
 ## Intro
-<img src='assets/Intro.png'>
+<img src='assets/hello.png'>
 
 <br/>
 
 ## Profile
-<img src='assets/Aboutme.png'>
+<img src='assets/profile.png'>
 
 <br/>
 
