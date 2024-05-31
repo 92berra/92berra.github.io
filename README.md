@@ -3,17 +3,18 @@
 <br/>
 
 ## Intro
-<img src='assets/intro.png'>
+<img src='assets/Intro.png'>
 
 <br/>
 
 ## Profile
-<img src='assets/aboutme.png'>
+<img src='assets/Aboutme.png'>
 
 <br/>
 
 ## Contact
-This function is not completed. Just in progress. ⚒️
+<img src='assets/Contact.png'>
+
 
 <br/>
 <br/>
