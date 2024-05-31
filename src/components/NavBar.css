@@ -22,7 +22,6 @@
   justify-content: left;
   height: 40px;
   transition: top 0.3s;
-  top: 0;
   width: 100%;
   color: white;
 }
@@ -39,6 +38,9 @@
   color: white;
   list-style: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
 }
 
 .NavBarItem.Active {

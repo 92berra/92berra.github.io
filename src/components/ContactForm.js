@@ -33,7 +33,9 @@ export default function ContactForm() {
     };
 
     return (
-        <div className="form-wrap my-4 p-4">
+        <div>
+            <h1 className='ContentHeader'>CONTACT</h1>
+            <div className="form-wrap my-4 p-4">
             <form ref={form} onSubmit={sendEmail} style={{ width: '100%' }} id="contact-form">
                 <div id="tagArea" style={{ padding: '0 4px' }}></div>
                 <div className="form-floating mb-3">
@@ -53,5 +55,7 @@ export default function ContactForm() {
                 </div>
             </form>
         </div>
+        </div>
+        
     );
 }
