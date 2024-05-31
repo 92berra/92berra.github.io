@@ -20,7 +20,7 @@ export default function ContactForm() {
         })
         .then((response) => {
             if (response.ok) {
-                alert('성공');
+                alert('Success');
             } else {
                 return response.json().then((error) => {
                     throw new Error(error);
@@ -28,7 +28,7 @@ export default function ContactForm() {
             }
         })
         .catch((error) => {
-            alert('Oops... ' + error.message);
+            alert('Failed ' + error.message);
         });
     };
 
@@ -48,8 +48,8 @@ export default function ContactForm() {
                     <textarea className="form-control" style={{ height: '13rem', resize: 'none' }} name="message" id="floatingTextarea" placeholder="Comments"></textarea>
                     <label htmlFor="floatingTextarea">Message</label>
                 </div>
-                <div className="nav justify-content-end px-2">
-                    <button type="submit" name="submit" className="btn btn-outline-success">Submit</button>
+                <div className="nav justify-content-center px-2">
+                    <button type="submit" name="submit" className="btn btn-dark">Submit</button>
                 </div>
             </form>
         </div>
