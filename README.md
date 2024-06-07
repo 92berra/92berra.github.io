@@ -7,13 +7,13 @@
 
 <br/>
 
-## Profile
+## About me
 <img src='assets/aboutme.png'>
 
 <br/>
 
 ## Contact
-<img src='assets/contact.png'>
+<img src='assets/contact_2.png'>
 
 
 <br/>
