@@ -3,17 +3,17 @@
 <br/>
 
 ## Intro
-<img src='assets/hello.png'>
+<img src='assets/intro.png'>
 
 <br/>
 
 ## Profile
-<img src='assets/profile.png'>
+<img src='assets/aboutme.png'>
 
 <br/>
 
 ## Contact
-<img src='assets/Contact.png'>
+<img src='assets/contact.png'>
 
 
 <br/>
