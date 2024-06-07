@@ -43,8 +43,12 @@
   margin-top: 12px;
 }
 
-.NavBarItem.Active {
-  color: #f669e3;
+.NavBarItem.hover {
+  color: #D9418C;
+}
+
+.NavBarItem.active {
+  color: #D9418C;
 }
 
 .Divider {

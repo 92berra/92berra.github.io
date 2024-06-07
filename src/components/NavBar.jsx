@@ -4,6 +4,23 @@ import './NavBar.css'
 function NavBar() {
 
     const [isVisible, setIsVisible] = useState(false);
+    const [navState, setNavState] = useState({
+        hoverIndex: null,
+        activeIndex: null,
+    });
+
+    const handleMouseEnter = (index) => {
+        setNavState({ ...navState, hoverIndex: index });
+    };
+    
+    const handleMouseLeave = () => {
+        setNavState({ ...navState, hoverIndex: null });
+    };
+    
+    const handleClick = (index, section) => {
+        setNavState({ ...navState, activeIndex: index });
+        scrollToDiv(section);
+    };
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -33,9 +50,36 @@ function NavBar() {
         <div className={`NavBarEntire ${isVisible ? 'fixed' : '' }`}>
             <div className='NavBarContainer'>
                 <ul className='NavBar'>
-                    <li className='NavBarItem' onClick={() => scrollToDiv('Intro')}>HOME</li>
-                    <li className='NavBarItem' onClick={() => scrollToDiv('AboutMe')}>ABOUT ME</li>
-                    <li className='NavBarItem' onClick={() => scrollToDiv('Contact')}>CONTACT</li>
+                <li
+          className={`NavBarItem ${
+            navState.hoverIndex === 0 ? 'hover' : ''
+          } ${navState.activeIndex === 0 ? 'active' : ''}`}
+          onMouseEnter={() => handleMouseEnter(0)}
+          onMouseLeave={handleMouseLeave}
+          onClick={() => handleClick(0, 'Intro')}
+        >
+          HOME
+        </li>
+        <li
+          className={`NavBarItem ${
+            navState.hoverIndex === 1 ? 'hover' : ''
+          } ${navState.activeIndex === 1 ? 'active' : ''}`}
+          onMouseEnter={() => handleMouseEnter(1)}
+          onMouseLeave={handleMouseLeave}
+          onClick={() => handleClick(1, 'AboutMe')}
+        >
+          ABOUT ME
+        </li>
+        <li
+          className={`NavBarItem ${
+            navState.hoverIndex === 2 ? 'hover' : ''
+          } ${navState.activeIndex === 2 ? 'active' : ''}`}
+          onMouseEnter={() => handleMouseEnter(2)}
+          onMouseLeave={handleMouseLeave}
+          onClick={() => handleClick(2, 'Contact')}
+        >
+          CONTACT
+        </li>
                 </ul>
             </div>
             <span className='Divider' />
