@@ -12,7 +12,7 @@ export default function LeftAlignedTimeline() {
 
     <Timeline
       sx={{ [`& .${timelineOppositeContentClasses.root}`]: { flex: 0.2, }, }}>
-      <h1 className='ContentHeader'>All My Experiences</h1>
+      <h1 className='ContentHeader'>All My Experiences</h1> <br/>
       <TimelineItem>
         <TimelineOppositeContent color="textSecondary">
           2022.01
