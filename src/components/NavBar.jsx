@@ -3,6 +3,7 @@ import './NavBar.css'
 
 function NavBar() {
     const [isVisible, setIsVisible] = useState(false);
+
     const [navState, setNavState] = useState({
         hoverIndex: null,
         activeIndex: null,
@@ -11,11 +12,11 @@ function NavBar() {
     const handleMouseEnter = (index) => {
         setNavState({ ...navState, hoverIndex: index });
     };
-    
+
     const handleMouseLeave = () => {
         setNavState({ ...navState, hoverIndex: null });
     };
-    
+
     const handleClick = (index, section) => {
         setNavState({ ...navState, activeIndex: index });
         scrollToDiv(section);
@@ -61,13 +62,12 @@ function NavBar() {
     };
 
     return (
-        <div className={`NavBarEntire ${isVisible ? 'fixed' : '' }`}>
+        <div className={`NavBarEntire ${isVisible ? 'fixed' : ''}`}>
             <div className='NavBarContainer'>
                 <ul className='NavBar'>
                     <li
-                        className={`NavBarItem ${
-                            navState.hoverIndex === 0 ? 'hover' : ''
-                        } ${navState.activeIndex === 0 ? 'active' : ''}`}
+                        className={`NavBarItem ${navState.hoverIndex === 0 ? 'hover' : ''
+                            } ${navState.activeIndex === 0 ? 'active' : ''}`}
                         onMouseEnter={() => handleMouseEnter(0)}
                         onMouseLeave={handleMouseLeave}
                         onClick={() => handleClick(0, 'Intro')}
@@ -75,9 +75,8 @@ function NavBar() {
                         HOME
                     </li>
                     <li
-                        className={`NavBarItem ${
-                            navState.hoverIndex === 1 ? 'hover' : ''
-                        } ${navState.activeIndex === 1 ? 'active' : ''}`}
+                        className={`NavBarItem ${navState.hoverIndex === 1 ? 'hover' : ''
+                            } ${navState.activeIndex === 1 ? 'active' : ''}`}
                         onMouseEnter={() => handleMouseEnter(1)}
                         onMouseLeave={handleMouseLeave}
                         onClick={() => handleClick(1, 'AboutMe')}
@@ -85,9 +84,8 @@ function NavBar() {
                         ABOUT ME
                     </li>
                     <li
-                        className={`NavBarItem ${
-                            navState.hoverIndex === 2 ? 'hover' : ''
-                        } ${navState.activeIndex === 2 ? 'active' : ''}`}
+                        className={`NavBarItem ${navState.hoverIndex === 2 ? 'hover' : ''
+                            } ${navState.activeIndex === 2 ? 'active' : ''}`}
                         onMouseEnter={() => handleMouseEnter(2)}
                         onMouseLeave={handleMouseLeave}
                         onClick={() => handleClick(2, 'Contact')}

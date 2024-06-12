@@ -1,4 +1,5 @@
 # 92berra.github.io
+For more information about below features I implemented, <a href='https://berra.tistory.com/category/Development%20Logs/Web'>click</a> here. 
 
 <br/>
 
