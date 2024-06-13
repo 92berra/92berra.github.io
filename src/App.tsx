@@ -42,6 +42,7 @@ export default function App() {
       </div>
 
       <br />
+      <br />
 
       <div className='TopButton'>
         <img className='TopButton' src={topButton} alt='Top' onClick={scrollTop} width={40} />
@@ -50,6 +51,7 @@ export default function App() {
       <div className='Footer'>
         Berra Oh ©2024
       </div>
+
     </div>
   );
 }
