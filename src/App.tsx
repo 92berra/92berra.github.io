@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import LeftAlignedTimeline from './components/LeftAlignedTimeline';
+import Portfolio from './components/Portfolio';
 import ContactForm from './components/ContactForm';
 import topButton from './assets/top.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,10 +31,23 @@ export default function App() {
         <NavBar />
       </div>
 
+      <br />
+
       <div id='AboutMe'>
         <LeftAlignedTimeline />
       </div>
 
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div id='Portfolio'>
+        <Portfolio />
+      </div>
+
+      <br />
+      <br />
       <br />
       <br />
 

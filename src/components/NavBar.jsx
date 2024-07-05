@@ -36,7 +36,7 @@ function NavBar() {
             setIsVisible(false);
         }
 
-        const sections = ['Intro', 'AboutMe', 'Contact'];
+        const sections = ['Intro', 'AboutMe', 'Portfolio', 'Contact'];
         const scrollPosition = window.scrollY + window.innerHeight / 2;
 
         sections.forEach((section, index) => {
@@ -55,7 +55,7 @@ function NavBar() {
     const scrollToDiv = (id) => {
         const element = document.getElementById(id);
         if (element) {
-            const yOffset = -80;
+            const yOffset = -70;
             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
@@ -87,6 +87,15 @@ function NavBar() {
                         className={`NavBarItem ${navState.hoverIndex === 2 ? 'hover' : ''
                             } ${navState.activeIndex === 2 ? 'active' : ''}`}
                         onMouseEnter={() => handleMouseEnter(2)}
+                        onMouseLeave={handleMouseLeave}
+                        onClick={() => handleClick(1, 'Portfolio')}
+                    >
+                        PORTFOLIO
+                    </li>
+                    <li
+                        className={`NavBarItem ${navState.hoverIndex === 3 ? 'hover' : ''
+                            } ${navState.activeIndex === 3 ? 'active' : ''}`}
+                        onMouseEnter={() => handleMouseEnter(3)}
                         onMouseLeave={handleMouseLeave}
                         onClick={() => handleClick(2, 'Contact')}
                     >
