@@ -18,7 +18,7 @@ export default function Portfolio() {
                 <br/>
                 <br/>
                 
-                <a href='https://github.com/92berra/Selfstudy/tree/main/pytorch'>
+                <a href='https://github.com/92berra/Selfstudy/tree/main/pytorch/vanillagan-fashionmnist'>
                     <img src={sample_animation}/>
                 </a>
             </div>
