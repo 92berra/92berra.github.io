@@ -31,7 +31,7 @@ export default function Portfolio() {
             <div align='center'>
                 <h3 className='ContentHeader'>Location-based Hangul Component Separation <br/>
                 for Accuracy Improvement of Korean Font Generation Model</h3>
-                Ubuntu LTS 14.02 / NVIDIA GeForce / VSCode / Tensorflow-GPU 1.13 / Opencv-python
+                Ubuntu LTS 14.02 / NVIDIA GeForce 2080 / VSCode / Tensorflow-GPU 1.13 / Opencv-python
 
                 <br/>
                 <br/>
