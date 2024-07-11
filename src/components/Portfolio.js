@@ -18,7 +18,7 @@ export default function Portfolio() {
                 <br/>
                 <br/>
                 
-                <a href='https://github.com/92berra/GANs-tutorial'>
+                <a href='https://github.com/92berra/Selfstudy/tree/main/pytorch/GANs-Tutorial'>
                     <img src={sample_animation}/>
                 </a>
             </div>
