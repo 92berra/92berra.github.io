@@ -41,6 +41,7 @@
   display: flex;
   align-items: center;
   margin-top: 12px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .NavBarItem.hover {
@@ -55,4 +56,13 @@
   background-color: #FFB2F5;
   height: 5px;
   display: block;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name */
+/* // <weight>: Use a value from 100 to 900 */
+
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }

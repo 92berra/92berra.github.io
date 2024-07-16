@@ -1,3 +1,8 @@
+.All-Container {
+  display: flex;
+  justify-content: center;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -14,6 +19,24 @@
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.amaranth-bold {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.amaranth-regular-italic {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.amaranth-bold-italic {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .Footer {
@@ -37,6 +60,35 @@
   z-index: 1;
 }
 
-.ContentHeader {
+.ContentTitle {
   text-align: center;
+  font-family: "Amaranth", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+.ContentSubTitle {
+  text-align: center;
+  font-family: "Amaranth", sans-serif;
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100px, 100px);
+    opacity: 0;
+  }
+}
+
+.shooting-star {
+  width: 2px;
+  height: 2px;
+  background-color: #FFD9FA;
+  position: absolute;
+  border-radius: 50%;
+  animation: shooting-star 1s linear infinite;
 }
