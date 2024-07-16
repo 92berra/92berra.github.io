@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from './components/1_NavBar';
 import LeftAlignedTimeline from './components/2_LeftAlignedTimeline';
 import Portfolio from './components/3_Portfolio';
 import ContactForm from './components/4_Contact';

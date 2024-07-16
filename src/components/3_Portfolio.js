@@ -21,9 +21,9 @@ export default function Portfolio() {
                 <br/>
                 
                 <a href='https://github.com/92berra/GANs-Tutorial'>
-                    <img src={gan_result_1} width={450}/>
+                    <img src={gan_result_1} style={{maxWidth: '80%'}}/>
                     <br/>
-                    <img src={gan_result_2} width={450}/>
+                    <img src={gan_result_2} style={{maxWidth: '80%'}}/>
                 </a>
             </div>
 
@@ -42,7 +42,7 @@ export default function Portfolio() {
                 <br/>
 
                 <a href='https://github.com/92berra/Decompose'>
-                    <img src={research} width={1000}/>
+                    <img src={research} style={{maxWidth: '80%'}}/>
                 </a>
             </div>
 

@@ -8,10 +8,7 @@
 
 .NavBarEntire.fixed {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+  z-index: 3;
 }
 
 .NavBarContainer {
@@ -30,7 +27,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .NavBarItem {
@@ -42,6 +39,8 @@
   align-items: center;
   margin-top: 12px;
   font-family: "Noto Sans", sans-serif;
+  font-size: 2vw;
+  white-space: nowrap;
 }
 
 .NavBarItem.hover {
@@ -56,6 +55,20 @@
   background-color: #FFB2F5;
   height: 5px;
   display: block;
+}
+
+/* 작은 화면에서는 글자 크기를 조금 더 작게 */
+@media (max-width: 600px) {
+  .NavBarItem {
+    font-size: 3vw;
+  }
+}
+
+/* 큰 화면에서는 글자 크기를 조금 더 크게 */
+@media (min-width: 1200px) {
+  .NavBarItem {
+    font-size: 1.5vw;
+  }
 }
 
 /* // <uniquifier>: Use a unique and descriptive class name */
