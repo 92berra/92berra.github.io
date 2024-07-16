@@ -15,10 +15,6 @@ export default function Portfolio() {
 
             <div align='center'>
                 <h3 className='ContentSubTitle'>GANs Tutorial</h3>
-                M3 Macbook Pro / macOS Sonoma 14.5 / VSCode / PyTorch(mps) 2.3.1
-
-                <br/>
-                <br/>
                 
                 <a href='https://github.com/92berra/GANs-Tutorial'>
                     <img src={gan_result_1} style={{maxWidth: '80%'}}/>
@@ -34,12 +30,8 @@ export default function Portfolio() {
 
             <div align='center'>
                 <h3 className='ContentSubTitle'>
-                Location-based Hangul Component Separation <br/>
+                Location-based Hangul Component Separation
                 for Accuracy Improvement of Korean Font Generation Model</h3>
-                Ubuntu LTS 14.02 / NVIDIA GeForce 2080 / VSCode / Tensorflow-GPU 1.13 / Opencv-python
-
-                <br/>
-                <br/>
 
                 <a href='https://github.com/92berra/Decompose'>
                     <img src={research} style={{maxWidth: '80%'}}/>
@@ -53,10 +45,6 @@ export default function Portfolio() {
 
             <div align='center'>
                 <h3 className='ContentSubTitle'>Paper Reviews</h3>
-                Computer vision, Generative Adversarial Networks, Deep Learning, etc.
-
-                <br/>
-                <br/>
 
                 <a href='https://github.com/92berra/Reviews'>
                     <img src={paper_review} width={400} />

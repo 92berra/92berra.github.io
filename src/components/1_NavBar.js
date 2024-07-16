@@ -30,7 +30,7 @@ function NavBar() {
     }, []);
 
     const handleScroll = () => {
-        if (window.scrollY > 800) {
+        if (window.scrollY > 900) {
             setIsVisible(true);
         } else {
             setIsVisible(false);

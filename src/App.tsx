@@ -21,8 +21,7 @@ export default function App() {
         animationDelay: `${Math.random() * 3}s`,
       };
       stars.push(
-      <div key={i} className="shooting-star" style={style}>
-      </div>);
+      <div key={i} className="shooting-star" style={style}></div>);
     }
     return stars;
   };
@@ -30,7 +29,7 @@ export default function App() {
   const [stars, setStars] = useState<JSX.Element[]>([]);
 
   useEffect(() => {
-    setStars(generateStars(80)); // 원하는 별똥별 개수를 설정
+    setStars(generateStars(80));
   }, []);
 
   const scrollTop = () => {

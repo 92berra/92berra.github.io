@@ -1,8 +1,3 @@
-.All-Container {
-  display: flex;
-  justify-content: center;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -88,7 +83,7 @@
   width: 2px;
   height: 2px;
   background-color: #FFD9FA;
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   animation: shooting-star 1s linear infinite;
 }
