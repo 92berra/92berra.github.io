@@ -9,12 +9,8 @@ import TimelineOppositeContent, { timelineOppositeContentClasses, } from '@mui/l
 
 export default function LeftAlignedTimeline() {
   return (
-
-    <Timeline sx={{ [`& .${timelineOppositeContentClasses.root}`]: { flex: 0.1, }, }}>
+    <Timeline sx={{ [`& .${timelineOppositeContentClasses.root}`]: { flex: 0.1, }, }} style={{backgroundColor:'#EAEAEA'}}>
       <h1 className='ContentTitle'>ABOUT ME</h1> 
-      
-      <br/>
-
       <TimelineItem>
         <TimelineOppositeContent color="textSecondary">
           2022.01
@@ -181,6 +177,5 @@ export default function LeftAlignedTimeline() {
         </TimelineContent>
       </TimelineItem>
     </Timeline>
-
   );
 }

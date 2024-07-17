@@ -40,7 +40,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: white;
 }
 
 .TopButton {
@@ -51,7 +50,6 @@
 }
 
 #AboutMe {
-  margin-top: 80px;
   z-index: 1;
 }
 
@@ -86,4 +84,5 @@
   position: fixed;
   border-radius: 50%;
   animation: shooting-star 1s linear infinite;
+  transition: transform 0.3s ease;
 }

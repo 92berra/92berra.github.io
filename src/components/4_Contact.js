@@ -33,7 +33,7 @@ export default function ContactForm() {
     };
 
     return (
-        <div>
+        <div >
             <h1 className='ContentTitle'>CONTACT</h1>
             <div className="form-wrap my-4 p-4">
             <form ref={form} onSubmit={sendEmail} style={{ width: '100%' }} id="contact-form">
@@ -54,8 +54,9 @@ export default function ContactForm() {
                     <button type="submit" name="submit" className="btn btn-dark">Submit</button>
                 </div>
             </form>
+            <br/>
         </div>
+        <br/>
         </div>
-        
     );
 }

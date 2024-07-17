@@ -40,7 +40,7 @@ export default function App() {
   };
 
   return (
-    <div id='All-Container'>
+    <div>
       <div id='Intro' className='Intro'>
         <header className='App-header'>
           <h1>
@@ -55,10 +55,10 @@ export default function App() {
         <NavBar />
       </div>
 
-      <br />
-
-      <div id='AboutMe'>
+      <div id='AboutMe' style={{backgroundColor:'#EAEAEA'}}>
+        <br />
         <LeftAlignedTimeline />
+        <br/>
       </div>
 
       <br />
@@ -72,24 +72,20 @@ export default function App() {
 
       <br />
       <br />
-      <br />
-      <br />
-
-      <div id='Contact'>
+      
+      <div id='Contact' style={{backgroundColor:'#FFD9EC'}}>
+        <br />
+        <br />
         <ContactForm />
       </div>
 
-      <br />
-      <br />
-
-      <div className='TopButton'>
-        <img className='TopButton' src={topButton} alt='Top' onClick={scrollTop} width={40} />
+      <div className='TopButton' style={{backgroundColor:'#EAEAEA'}}>
+          <img className='TopButton' src={topButton} alt='Top' onClick={scrollTop} width={40}  />
+        <br/>      
       </div>
-
-      <div className='Footer'>
+      <div className='Footer' style={{backgroundColor:'#F6F6F6'}}>
         Berra Oh ©2024
       </div>
-
     </div>
   );
 }

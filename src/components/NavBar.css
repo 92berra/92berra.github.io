@@ -1,5 +1,4 @@
 .NavBarEntire {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -39,7 +38,6 @@
   align-items: center;
   margin-top: 12px;
   font-family: "Noto Sans", sans-serif;
-  font-size: 2vw;
   white-space: nowrap;
 }
 
@@ -55,20 +53,6 @@
   background-color: #FFB2F5;
   height: 5px;
   display: block;
-}
-
-/* 작은 화면에서는 글자 크기를 조금 더 작게 */
-@media (max-width: 600px) {
-  .NavBarItem {
-    font-size: 1vw;
-  }
-}
-
-/* 큰 화면에서는 글자 크기를 조금 더 크게 */
-@media (min-width: 1200px) {
-  .NavBarItem {
-    font-size: 1vw;
-  }
 }
 
 /* // <uniquifier>: Use a unique and descriptive class name */
