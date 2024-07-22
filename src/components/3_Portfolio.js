@@ -1,6 +1,7 @@
 import gan_result_1 from './assets/2_portfolio_1.gif';
 import gan_result_2 from './assets/2_portfolio_2.gif';
-import paper_review from './assets/2_portfolio_3.png';
+import paper_review from './assets/2_portfolio_5.png';
+import paper_review_2 from './assets/2_portfolio_6.png';
 import research from './assets/1-introduction-overview.png';
 
 export default function Portfolio() {
@@ -46,9 +47,13 @@ export default function Portfolio() {
             <div align='center'>
                 <h3 className='ContentSubTitle'>Paper Reviews</h3>
 
-                <a href='https://github.com/92berra/Reviews'>
-                    <img src={paper_review} width={400} />
-                </a>
+                <div align='horizontal'>
+                    <a href='https://github.com/92berra/Reviews'>
+                        <img src={paper_review} width={400} />
+                        <img src={paper_review_2} width={400} />
+                    </a>
+                </div>
+                
             </div>
         </div>
     )
