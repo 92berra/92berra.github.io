@@ -35,6 +35,10 @@ export default function ContactForm() {
     return (
         <div >
             <h1 className='ContentTitle'>CONTACT</h1>
+            <div align='center'>
+                <br/>
+                Feel free to contact me! 😍
+            </div>
             <div className="form-wrap my-4 p-4">
             <form ref={form} onSubmit={sendEmail} style={{ width: '100%' }} id="contact-form">
                 <div id="tagArea" style={{ padding: '0 4px' }}></div>

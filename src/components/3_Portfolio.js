@@ -43,18 +43,6 @@ export default function Portfolio() {
             <br/>
             <br/>
             <br/>
-
-            <div align='center'>
-                <h3 className='ContentSubTitle'>Paper Reviews</h3>
-
-                <div align='horizontal'>
-                    <a href='https://github.com/92berra/Reviews'>
-                        <img src={paper_review} width={400} />
-                        <img src={paper_review_2} width={400} />
-                    </a>
-                </div>
-                
-            </div>
         </div>
     )
 }

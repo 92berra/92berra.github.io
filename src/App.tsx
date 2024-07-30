@@ -82,9 +82,12 @@ export default function App() {
       <div className='TopButton' style={{backgroundColor:'#EAEAEA'}}>
           <img className='TopButton' src={topButton} alt='Top' onClick={scrollTop} width={40}  />
         <br/>      
+        <br/>
+        <br/>
       </div>
+
       <div className='Footer' style={{backgroundColor:'#F6F6F6'}}>
-        Berra Oh ©2024
+        Berra Oh ©2024 &nbsp; |  &nbsp; <a href='https://berra.tistory.com'>BLOG</a>
       </div>
     </div>
   );
